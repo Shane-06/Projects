@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body{
+    background-color: #ddd;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.conatainer{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar{
+    justify-content: space-between;
+}
+.nav-links{
+   gap: 30px;
+   list-style: none;
+
+}
+.navbar a{
+    padding: 20px 0;
+    display: inline-block;
+    color: rgb(251, 246, 246);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s;
+}
+.navbar a:hover{
+    color: #ddd;
+}
+
+.homepage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("images/home-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.homepage::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0 0 0 0.2);
+
+}
+.homepage .content{
+    position: relative;
+    height: 85%;
+    flex-direction:column ;
+    justify-content: center;
+}
+.homepage .text{
+    color: #ddd;
+    text-align: center;
+    /* text-align: center; */
+}
+
+.homepage .text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homepage a{
+    margin-top: 40px;
+    color: #333;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: 0.2s;
+    box-shadow: 2px 2px 5px grey;
+}
+.homepage a:hover{
+    color: lightgray;
+    background: 255 255;
+}
+section{
+    padding-top: 80px;
+    
+}
+section .cards{
+    margin: 50px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.section-title{
+    text-align: center;
+}
+section h2{
+    font-size: 2rem;
+}
+section .card{
+    width: calc(100%/3-30px);
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 40px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+section .card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+   
+}
+section .card p{
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+}
+.portfolio .card{
+    padding: 5px 5px 20px;
+}
+.portfolio .card img{
+    height: 220px;
+    width: 220px;
+    border-radius: 0 0 20px;
+}
+
+
